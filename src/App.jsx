@@ -5,16 +5,21 @@ import Navbar from "./Components/Navbar";
 import AddLiquidity from "./Components/AddLiquidity";
 import RemoveLiquidity from "./Components/RemoveLiquidity";
 import Swap from "./Components/Swap";
+import Home from "./Components/Home";
+
 
 export default function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Faucet />} />
-        <Route path="/addliquidity" element={<AddLiquidity></AddLiquidity>} />
-        <Route path="/removeLiquidity" element={<RemoveLiquidity></RemoveLiquidity>} />
+       <Route path="/" element={<Home/>} />
+        <Route path="/faucet" element={<Faucet />} />
+        <Route path="/addliquidity" element={<AddLiquidity/>} />
+        <Route path="/removeLiquidity" element={<RemoveLiquidity/>} />
         <Route path="/swap" element={<Swap/>} />
+        
+
 
         {/* Later if you have more pages, just add more <Route> here */}
       </Routes>

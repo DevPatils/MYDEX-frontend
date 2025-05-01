@@ -3,7 +3,7 @@ import { ethers } from "ethers";
 
 const POOL_ADDRESS = "0x38cD6e08dA3dCAAF4E77900fdFCB77F568A4fC41";
 const TOKENX_ADDRESS = "0x30B57FfDEfa6Faa933E9c36008BBa0CB3d474596"; // drop your actual tokenX address
-const TOKENY_ADDRESS = "0xd3b36fa7059B1ab7B5D76A11b871A9d25e3ef5Ca" // drop your actual tokenY address
+const TOKENY_ADDRESS = "0xd3b36fa7059B1ab7B5D76A11b871A9d25e3ef5Ca";// drop your actual tokenY address
 
 const erc20Abi = [
   "function approve(address spender, uint256 amount) external returns (bool)",
